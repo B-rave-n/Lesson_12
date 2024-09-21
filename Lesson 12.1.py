@@ -11,7 +11,7 @@ def delete_html_tags(file_for_cleaned, clean_file):
         result = []
         for i in lst:
             if i.strip() != '':
-                result.append(i.strip())
+                result.append(i)
     with open(file_2, 'w') as cleaned:
         cleaned.write('\n'.join(result))
 
