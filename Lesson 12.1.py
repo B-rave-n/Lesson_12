@@ -12,6 +12,7 @@ def delete_html_tags(file_for_cleaned, clean_file):
         for i in lst:
             if i.strip() != '':
                 result.append(i)
+                # Або result.append(i.strip()) щоб додати рядки без пробілів справа й зліва
     with open(file_2, 'w') as cleaned:
         cleaned.write('\n'.join(result))
 
